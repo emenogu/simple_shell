@@ -2,8 +2,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-/** Command data structure
- * describes command and arguments
+/** Command data structure that describes command and arguments
  */
 struct simpleCommand
 {
