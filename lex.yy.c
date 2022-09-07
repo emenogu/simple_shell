@@ -112,34 +112,32 @@ typedef unsigned int flex_uint32_t;
 /* Enter a start condition.  This macro really ought to take a parameter, */
  /* but we do it the disgusting crufty way forced on us by the ()-less */
  /* definition of BEGIN. */
-#define BEGIN (yy_start) = 1 + 2 *
-/* Translate the current start state into a value that can be later handed
- * to BEGIN to return to the state.  The YYSTATE alias is for lex
- * compatibility.
- */
+#define BEGIN (yy_start) = (1 + 2 *)
+/* Translate the current start state into a value that can be later handed */
+/* to BEGIN to return to the state.  The YYSTATE alias is for lex */
+ /* compatibility. */
 #define YY_START (((yy_start) - 1) / 2)
 #define YYSTATE YY_START
 /* Action number for EOF rule of a given start state. */
 #define YY_STATE_EOF(state) (YY_END_OF_BUFFER + state + 1)
 /* Special action meaning "start processing a new file". */
-#define YY_NEW_FILE yyrestart( yyin  )
+#define YY_NEW_FILE yyrestart(yyin)
 #define YY_END_OF_BUFFER_CHAR 0
 
 /* Size of default input buffer. */
 #ifndef YY_BUF_SIZE
 #ifdef __ia64__
-/* On IA-64, the buffer size is 16k, not 8k.
- * Moreover, YY_BUF_SIZE is 2*YY_READ_BUF_SIZE in the general case.
- * Ditto for the __ia64__ case accordingly.
- */
+/* On IA-64, the buffer size is 16k, not 8k. */
+/* Moreover, YY_BUF_SIZE is 2*YY_READ_BUF_SIZE in the general case. */
+ /* Ditto for the __ia64__ case accordingly. */
 #define YY_BUF_SIZE 32768
 #else
 #define YY_BUF_SIZE 16384
 #endif /* __ia64__ */
 #endif
 
-/* The state buf must be large enough to hold one state per character in the main buffer.
- */
+/* The state buf must be large enough to hold one */
+/* state per character in the main buffer. */
 #define YY_STATE_BUF_SIZE   ((YY_BUF_SIZE + 2) * sizeof(yy_state_type))
 
 #ifndef YY_TYPEDEF_YY_BUFFER_STATE
@@ -165,8 +163,7 @@ extern FILE *yyin, *yyout;
 
 /* Return all but the first "n" matched characters back to the input stream. */
 #define yyless(n) \
-	do \
-		{ \
+	do \{ \
 		/* Undo effects of setting up yytext. */ \
         int yyless_macro_arg = (n); \
         YY_LESS_LINENO(yyless_macro_arg);\
