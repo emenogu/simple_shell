@@ -2,7 +2,9 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-/** Command data structure that describes command and arguments
+/** @simpleCommand: structure that defines number of argumebrts
+ * @Commanf: structure defining commands used in the shell
+ * Command data structure that describes command and arguments
  */
 struct simpleCommand
 {
@@ -19,7 +21,7 @@ struct simpleCommand
 };
 /* describes a complete command with multiple pipes*/
 /* or input output redirections if any*/
-struct Command 
+struct Command
 {
 	int _numberOfAvailableSimpleCommands;
 	int _numberOfSimpleCommands;
