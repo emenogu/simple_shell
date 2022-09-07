@@ -10,6 +10,7 @@ void Command::execute()
 
 	/* set the initial input */
 	int fdin;
+
 	if (infile)
 	{
 		fdin = open(infile, O_READ);
@@ -22,6 +23,7 @@ void Command::execute()
 
 	int ret;
 	int fdout;
+
 	for (i = 0; i < numsimplecommands; i++)
 	{
 		/* redirect input */
