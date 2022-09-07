@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-/** @simpleCommand: structure that defines number of argumebrts
- * @Commanf: structure defining commands used in the shell
+/** @struct simpleCommand: structure that defines number of argumebrts
+ * @struct Command: structure defining commands used in the shell
  * Command data structure that describes command and arguments
  */
 struct simpleCommand
