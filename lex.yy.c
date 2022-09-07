@@ -172,8 +172,8 @@ extern FILE *yyin, *yyout;
 		(yy_c_buf_p) = yy_cp = yy_bp + yyless_macro_arg - YY_MORE_ADJ; \
 		YY_DO_BEFORE_ACTION; /* set up yytext again */ \
 		} \
-	while ( 0 )
-#define unput(c) yyunput( c, (yytext_ptr)  )
+	while (0)
+#define unput(c) yyunput(c,(yytext_ptr))
 
 #ifndef YY_STRUCT_YY_BUFFER_STATE
 #define YY_STRUCT_YY_BUFFER_STATE
@@ -194,17 +194,15 @@ struct yy_buffer_state
 	 */
 	int yy_n_chars;
 
-	/* Whether we "own" the buffer - i.e., we know we created it,
-	 * and can realloc() it to grow it, and should free() it to
-	 * delete it.
-	 */
+	/* Whether we "own" the buffer - i.e., we know we created it, */
+	 /* and can realloc() it to grow it, and should free() it to */
+	 /* delete it */
 	int yy_is_our_buffer;
 
-	/* Whether this is an "interactive" input source; if so, and
-	 * if we're using stdio for input, then we want to use getc()
-	 * instead of fread(), to make sure we stop fetching input after
-	 * each newline.
-	 */
+	/* Whether this is an "interactive" input source; if so, and */
+/* if we're using stdio for input, then we want to use getc() */
+/* instead of fread(), to make sure we stop fetching input */ 
+	/* after each newline.  */
 	int yy_is_interactive;
 
 	/* Whether we're considered to be at the beginning of a line.
