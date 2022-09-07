@@ -1,7 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+
 /** Command data structure
  * describes command and arguments
  */
-struct simpleCommand {
+struct simpleCommand
+{
 	/* existing space for arguments currently preallocated*/
 	int _numberOfAvailableArguments;
 
